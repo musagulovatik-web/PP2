@@ -76,4 +76,3 @@ Enclosing - Inside enclosing functions (from inner to outer)
 Global - At the top level of the module
 Built-in - In Python's built-in namespace"""
 
-#8
