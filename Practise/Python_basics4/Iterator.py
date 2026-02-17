@@ -51,3 +51,19 @@ myiter = iter(myclass)
 
 for x in myiter:
   print(x)
+
+#6
+def fun(max): #write a func
+    cnt = 1 #first iterator
+    while cnt <= max: #limit of the iterator
+        yield cnt  #yield is similar to return but it give values one by one, not at all in one time
+        cnt += 1 #step 
+
+ctr = fun(5)
+for n in ctr:
+    print(n)
+
+#7
+sq = (x*x for x in range(1, 6)) #gave condition to our variables(x*x) and gave the range of them(from 1 to 6)
+for i in sq:
+    print(i)
