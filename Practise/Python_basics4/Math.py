@@ -25,23 +25,23 @@ f=math.pi # П constant
 sqrt(x) — Square root of 
 .
 pow(x, y) — Raises 
- to the power of 
+to the power of 
 .
 factorial(n) — Factorial of 
 .
 fabs(x) — Absolute value of 
- (as a float).
+(as a float).
 gcd(a, b) — Greatest common divisor of 
- and 
+and 
 .
 isqrt(n) — Integer square root.
 2. Rounding 
 ceil(x) — Rounds 
- up to the nearest integer.
+up to the nearest integer.
 floor(x) — Rounds 
- down to the nearest integer.
+down to the nearest integer.
 trunc(x) — Truncates 
- (removes the decimal part).
+(removes the decimal part).
 fmod(x, y) — Returns the remainder of division (more precise than %).
 3. Trigonometry 
 sin(x), cos(x), tan(x) — Sine, cosine, and tangent (input in radians).
@@ -52,7 +52,7 @@ hypot(x, y) — Calculates the hypotenuse
 .
 4. Logarithms and Exponents
 log(x, [base]) — Logarithm of 
- (natural by default).
+(natural by default).
 log10(x) — Base-10 logarithm.
 exp(x) — Returns 
 .
