@@ -1,6 +1,5 @@
 import pygame
 import ball
-import sys
 pygame.init()
 W=900
 H=600
@@ -16,14 +15,17 @@ while running:
             running=False
         if event.type == pygame.KEYDOWN:
             k = 0
-            if event.key == pygame.K_UP: k = 1
-            if event.key == pygame.K_DOWN: k = 2
-            if event.key == pygame.K_LEFT: k = 3
-            if event.key == pygame.K_RIGHT: k = 4
+            if event.key == pygame.K_UP: 
+                k = 1
+            if event.key == pygame.K_DOWN:
+                k = 2
+            if event.key == pygame.K_LEFT:
+                k = 3
+            if event.key == pygame.K_RIGHT:
+                k = 4
             x, y = ball.mb(x, y, k, W, H)
 
     pygame.display.flip()
     pygame.time.Clock().tick(60)
 
 pygame.quit()
-sys.exit()

@@ -1,5 +1,4 @@
 import pygame
-import sys
 import player
 pygame.init()
 pygame.mixer.init()
@@ -10,8 +9,8 @@ ply=False
 while running:
     sc.fill((0,0,0))
     if player.playlist:
-        track_name = player.playlist[player.current_track_index]
-        text_surface = ft.render(f"Now Playing: {track_name}", True, (255,255,255))
+        track = player.playlist[player.c]
+        text_surface = ft.render(f"Now Playing: {track}", True, (255,255,255))
         sc.blit(text_surface, (50, 150))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -34,4 +33,3 @@ while running:
 
 pygame.mixer.music.stop()
 pygame.quit()
-sys.exit()
