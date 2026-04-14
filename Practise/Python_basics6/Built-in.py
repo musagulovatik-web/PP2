@@ -7,8 +7,8 @@ t=list(filter(lambda z: z>21, y))
 print(t)
 g=zip(x,y)
 d=dict(g)
-for m,n in enumerate(d):
+for m,n in enumerate(d, start=1):
     print(f"The square of {m} is {n}")
 sm=functools.reduce(lambda x,y: x+y, x) #sum of x
-mx=functools.reduce(lambda x,y: x if x>y else y, y)
+mx=functools.reduce(lambda x,y: x if x>y else y, y) #largest number in y
 print(sm, mx)
