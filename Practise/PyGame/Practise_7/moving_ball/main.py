@@ -26,6 +26,7 @@ while running:
             x, y = ball.mb(x, y, k, W, H)
 
     pygame.display.flip()
-    pygame.time.Clock().tick(60)
+    clock=pygame.time.Clock()
+    clock.tick(60)
 
 pygame.quit()
